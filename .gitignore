@@ -1,0 +1,25 @@
+# Rust
+/target
+Cargo.lock
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Benchmark data (download from Kaggle)
+/solor_power/
+/solar_power/
+*.csv
+
+# Build artifacts
+*.so
+*.dylib
+*.dll
+
