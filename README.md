@@ -89,13 +89,13 @@ let (len, is_abs) = encoder.encode(&schema, &next_values, &mut buf)?;
 tspack = "0.1"
 ```
 
-## Documentation
+## How It Works
 
-See [plans.md](plans.md) for detailed design document including:
-- Information theory background
-- Wire format specification
-- Algorithm details (QDC: Quantized Delta with Checkpoint)
-- Benchmark methodology and results
+1. **Schema Definition**: Define value ranges and precision for each field
+2. **Quantization**: Map float values to minimal bits based on schema
+3. **Bit-packing**: Pack values across byte boundaries
+4. **Delta Encoding**: Optional streaming mode with periodic checkpoints
+5. **CRC-8**: Integrity verification
 
 ## Roadmap
 
